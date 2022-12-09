@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+           
+{% block title %}
+  
+  My Blog
+    
+{% endblock title %}
+    
+    
+{% block content %}
+    <h3> Καλημέρα
+        
+        {% if myname and myname != 'Panteli' %}
+
+        {{ myname }}
+              
+        {% elif myname == 'Panteli'  %}
+
+            Παντελή
+    
+        {% else %}
+            
+            σε όλους
+
+        {% endif %}     
+    </h3>
+
+{% endblock content %}
